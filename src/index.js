@@ -15,7 +15,7 @@ async function uploadFirestore(image) {
     const contents = fs.readFileSync(__dirname + '/image/' + image).buffer;
     var myImg = new Uint8Array(contents)
 
-    const storageRef = ref(storage, 'ai-robots/' + image);
+    const storageRef = ref(storage, 'ai-robots/' + image); // ai-robots is a folder store image in firebase storage 
 
     let uploaded = await uploadBytes(storageRef, myImg, { contentType: 'image/png' })
     let downloadUrl = await getDownloadURL(uploaded.ref);
