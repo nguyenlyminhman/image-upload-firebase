@@ -2,10 +2,8 @@ const fs = require('fs');
 const { ref, uploadBytes, getDownloadURL } = require("firebase/storage");
 const { storage } = require("./configs/firebase");
 const { dbs } = require('./configs/firebase-admin')
-const { collection } = require("firebase/firestore");
 const moment = require('moment');
-var colors = require('colors/safe');
-const { log } = require('console');
+const colors = require('colors/safe');
 
 
 
