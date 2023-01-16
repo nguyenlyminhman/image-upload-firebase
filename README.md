@@ -1,4 +1,4 @@
-# Metapolis Server
+# Server
 
 ### Project structure
 ![image](img/1_prj.png)
